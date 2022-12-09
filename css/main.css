@@ -1,4 +1,16 @@
 @charset "UTF-8";
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-color: #FFFFFF;
+  --blue-color: #2196F3;
+  --hero-background-color: #2F303A;
+  --second-background-color: #F5F4FA;
+  --second-white-color: rgba(255, 255, 255, 0.6);
+  --color-icon: #AFB1B8;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
 ::after,
@@ -140,18 +152,6 @@ summary {
   display: list-item;
 }
 
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --white-color: #FFFFFF;
-  --blue-color: #2196F3;
-  --hero-background-color: #2F303A;
-  --second-background-color: #F5F4FA;
-  --second-white-color: rgba(255, 255, 255, 0.6);
-  --color-icon: #AFB1B8;
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -176,7 +176,7 @@ ul {
   padding: 0;
 }
 
-.list {
+.list, .about-them__list {
   list-style: none;
 }
 
@@ -186,16 +186,41 @@ ul {
   box-sizing: border-box;
 }
 
-.section-team {
+.container, .section-team__info {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section, .section-team__info {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.about-them__list {
+.stealth {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list, .about-them__list {
   list-style: none;
 }
 
-.section {
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 250ms var(--cubic);
+}
+
+.section, .section-team__info {
   padding-bottom: 94px;
 }
 
@@ -449,7 +474,7 @@ ul {
 }
 
 .section-team {
-  background-color: var;
+  background-color: var(--second-background-color);
 }
 .section-team__list {
   display: flex;
