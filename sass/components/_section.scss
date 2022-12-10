@@ -1,8 +1,6 @@
-
-
+// наша команда
 .section-team {
     
-
     background-color: var(--second-background-color);
     &__info {
         @extend .section;
@@ -30,9 +28,6 @@
     }
 }
 
-
-
-
 .about-them {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -45,7 +40,6 @@
     font-size: 16px;
     line-height: 1.19;
  }
-
     &__list {
     @extend .list;
     display: flex;
@@ -80,18 +74,19 @@
 }
         
     .about-them__team-icon {
-    
         fill: var(--color-icon);
-    
     
         .about-them__team-link:hover &,
         .about-them__team-link:focus & {
         fill: var(--white-color);
     }
-
-    .about-them__team-link:hover,
-    .about-them__team-link:focus {
-    background-color: var(--blue-color);
+}
+    .about-them__team-link {
+        &:hover,
+        &:focus {
+            background-color: var(--blue-color);
+    }
+    
 }
 
-}
+
