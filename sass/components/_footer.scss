@@ -7,12 +7,12 @@
     &__block {
         @extend .container;
         display: flex;
-        align-items: flex-start;
+        // align-items: flex-start;
+        align-items: baseline;
         
     }
         &__box:nth-child(2) {
         width: 206px;
-        padding-top: 12px;
         margin-left: 70px;
     }
         &__accent {
@@ -103,6 +103,7 @@
         &:hover,
         &:focus {
             background-color: var(--blue-color);
+            transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
             }
     }
     &__icon {
@@ -115,7 +116,6 @@
 /* Пшдписатися на розсилку */
 .footer-sub {
     margin-left: 93px;
-    padding-top: 12px;
     &__title {
         margin-bottom: 20px;
     

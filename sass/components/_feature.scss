@@ -1,12 +1,14 @@
+    .container {
+            @extend .container;
+        }
+
 .feature {
-    padding-top: 94px;
+    padding-bottom: 0;
     
     &__hide {
         @extend .stealth;
     }
-    &__container {
-        @extend .container;
-    }
+   
     &__list {
         display: flex;
         margin: -15px;

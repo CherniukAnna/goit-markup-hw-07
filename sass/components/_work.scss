@@ -1,7 +1,8 @@
 // чим ми займаємося
+.container {
+    @extend .container;
+}
 .work {
-@extend .section;
-@extend .container;
     &__title {
         color: var(--title-text-color);
 

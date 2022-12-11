@@ -1,14 +1,14 @@
-.section-button {
-    @extend .section;
+.container {
+    @extend .container;
+ 
+}
+.main {
+    
     &__hide {
         @extend .stealth;
     }
-    &__portfolio-btn {
-        @extend .container;
-        padding-bottom: 34px;
-    }
     &__list {
-        @extend .list;
+        padding-bottom: 34px;
         color: var(--title-text-color);
         
             display: flex;
@@ -20,7 +20,7 @@
             transition-duration: 250ms;
             transition-timing-function: var(--cubic);
     }
-    &__link {
+    &__item {
         display: flex;
         margin: 8px;
     }

@@ -1,10 +1,7 @@
+.container {
+    @extend .container;
+}
 .client {
-    @extend .list;
-
-    &__info {
-        @extend .section;
-        @extend .container;
-    }
     &__title {
         color: var(--title-text-color);
         

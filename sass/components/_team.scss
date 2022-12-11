@@ -1,11 +1,11 @@
 // наша команда
-.section-team {
+.container {
+    @extend .container;
+}
+.team {
     
     background-color: var(--second-background-color);
-    &__info {
-        @extend .section;
-        @extend .container;
-    }
+    
     &__list {
             display: flex;
             justify-content: space-between;
@@ -41,7 +41,6 @@
     line-height: 1.19;
  }
     &__list {
-    @extend .list;
     display: flex;
     justify-content: space-between;
     padding-left: 32px;
