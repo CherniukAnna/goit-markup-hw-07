@@ -76,17 +76,16 @@
         color: var(--white-color);
     }
     &__list {
-        @extend .list;
         display: flex;
         justify-content: space-between;
     }
     &__item {
         border-radius: 50%;
     
-        transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
         &:hover,
         &:focus {
             background-color: var(--blue-color);
+                transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
         }
     }
     &__link {

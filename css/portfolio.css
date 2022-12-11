@@ -211,7 +211,7 @@ section {
   clip: rect(0 0 0 0);
 }
 
-.list, .footer-join__list, .footer__list, .portfolio__list {
+.list, .footer__list, .portfolio__list {
   list-style: none;
 }
 
@@ -511,10 +511,10 @@ section {
 }
 .footer-join__item {
   border-radius: 50%;
-  transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
 }
 .footer-join__item:hover, .footer-join__item:focus {
   background-color: var(--blue-color);
+  transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
 }
 .footer-join__link {
   display: flex;
